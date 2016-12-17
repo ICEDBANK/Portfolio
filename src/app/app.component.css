@@ -1,0 +1,73 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html{
+	box-sizing: border-box;
+
+}
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+a{
+	color: black;
+	font-weight: 100;
+	letter-spacing: .2em;
+	text-decoration: none;
+	background:rgba(0 0 0 .5);
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	transition: all 0.5s;
+	padding-top: .8em;
+	font-style: italic;
+}
+.navbar{
+	background-color: rgba(0 , 0 , 0 , .3);
+	height: 3em;
+	margin: 0 .8em 0 .8em;
+	border-radius: 0 0 .8em .8em;
+}
+
+.navbar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+	height: inherit;
+}
+.navbar li{
+	flex: 1;
+}
+.navbar li:hover{
+	background-color: rgba(0 , 0 , 0 , 0.1);
+}
+.navbar .home{
+	margin-right: 30%;
+}
+.navbar .menu{
+	display: none;
+}
+
+@media all and (max-width: 900px){
+	.navbar ul {
+		flex-direction: column;
+	}
+	.navbar .home {
+		margin: 0;
+	}
+	.navbar .menu{
+		display: block;
+	}
+	.navbar li{
+		display: none;
+	}
+}
+.flex-container{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
